@@ -1,8 +1,8 @@
 import React from 'react';
-import {useLocation, useRouteMatch, useHistory, useParams} from 'react-router-dom'
+
 import CollectionItem from '../../components/collection-item/collection-item.component';
 import {connect} from 'react-redux'
-import {createStructuredSelector} from 'reselect'
+
 import {selectCollection} from '../../redux/shop/shop.selector'
 
 import './collection.styles.scss' ;
