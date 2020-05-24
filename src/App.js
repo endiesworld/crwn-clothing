@@ -10,6 +10,7 @@ import {auth, createUserProfileDocument} from './firebase/firebase.utils'
 import {setCurrentUser} from './redux/user/user.action'
 import {currentUserSelector} from './redux/user/user.selector'
 import {createStructuredSelector} from 'reselect'
+
 import './App.css'
 
 
@@ -33,7 +34,7 @@ function App(props) {
         else {
           setCurrentUser(userAuth)
         }
-     }
+         }
     )
       return function unsubscribe() {
         unsub() ;
